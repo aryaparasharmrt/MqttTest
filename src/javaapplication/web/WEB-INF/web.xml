@@ -1,0 +1,17 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <servlet>
+        <servlet-name>PubSubServlet</servlet-name>
+        <servlet-class>javaapplication.PubSubServlet</servlet-class>  <!-- Updated package name -->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PubSubServlet</servlet-name>
+        <url-pattern>/pubsub</url-pattern>
+    </servlet-mapping>
+
+</web-app>
